@@ -1,0 +1,4 @@
+1. Object Model representation - for better reuse of functionality
+2. Finish unimplemented REST methods
+3. Pagination options for GET collection
+

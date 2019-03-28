@@ -1,0 +1,11 @@
+<Limit GET POST PUT DELETE OPTIONS>
+    Require all granted
+</Limit>
+<LimitExcept GET POST PUT DELETE OPTIONS>
+    Require all denied
+</LimitExcept>
+
+#<IfModule mode_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^([^/]+)/? index.php?url=$1 [L,QSA]
+#</IfModule>
